@@ -38,7 +38,7 @@ else:
     tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 
-__version__ = '0.2.1'
+__version__ = '0.2.3'
 
 
 class StressRNN(object):
