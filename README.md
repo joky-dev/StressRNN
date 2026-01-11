@@ -60,7 +60,7 @@ pip install -r requirements_dev.txt
 
 **Full dependencies:** `numpy>=1.16.0 pymorphy2[fast]<=0.9.2 tensorflow<=2.2.2 onnxruntime<=1.15.1 keras2onnx<=1.7` (listed in [requirements_dev.txt](https://github.com/Desklop/StressRNN/blob/master/requirements_dev.txt), only Python 3.6-3.8).
 
-**Dependencies for package use only:** `numpy>=1.16.0 mawo_pymorphy3 onnxruntime<=1.15.1` (listed in [requirements.txt](https://github.com/Desklop/StressRNN/blob/master/requirements.txt)).
+**Dependencies for package use only:** `numpy>=1.16.0 pymorphy3 onnxruntime<=1.15.1` (listed in [requirements.txt](https://github.com/Desklop/StressRNN/blob/master/requirements.txt)).
 
 **Note 1:** TensorFlow v2.X is supported, but the work speed using TensorFlow v2.X is about 3-5 times lower than with TensorFlow v1.X.
 

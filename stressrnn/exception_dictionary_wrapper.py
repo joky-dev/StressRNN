@@ -7,10 +7,10 @@ Exception dictionary for correcting stress placement by a neural network.
 
 Contains the 'ExceptionDictWrapper' class. Learn more in https://github.com/Desklop/StressRNN.
 
-Dependences: mawo_pymorphy3
+Dependences: pymorphy3
 '''
 
-import mawo_pymorphy3
+import pymorphy3
 
 try:
     from .constants import DEF_STRESS_SYMBOL, ADD_STRESS_SYMBOL, F_NAME_EXCEPTION_DICT
@@ -37,7 +37,7 @@ class ExceptionDictWrapper:
     1. f_name_add_exception_dict - name of additional .txt dictionary with exceptions '''
 
     def __init__(self, f_name_add_exception_dict: str = None) -> None:
-        self.morph_analyzer = mawo_pymorphy3.MorphAnalyzer()
+        self.morph_analyzer = pymorphy3.MorphAnalyzer()
         self.exception_dict = {}
 
         self.__load_exception_dict(F_NAME_EXCEPTION_DICT)
